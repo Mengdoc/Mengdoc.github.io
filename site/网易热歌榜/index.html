@@ -1,0 +1,1602 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%E6%AF%8F%E6%97%A5%E5%BF%85%E5%BA%94/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>网易热歌榜 - 梦泽の项目文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="梦泽の项目文档" class="md-header__button md-logo" aria-label="梦泽の项目文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            梦泽の项目文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              网易热歌榜
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="梦泽の项目文档" class="md-nav__button md-logo" aria-label="梦泽の项目文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    梦泽の项目文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    欢迎来到这里
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%80%E8%A8%80%E6%8E%A5%E5%8F%A3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一言接口文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%94%B6%E5%BD%95%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    收录系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%AF%8F%E6%97%A5%E5%BF%85%E5%BA%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    每日必应壁纸
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    网易热歌榜
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    网易热歌榜
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      请求方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      请求参数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应示例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应字段说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      错误处理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例代码
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      请求方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      请求参数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应示例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应字段说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      错误处理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例代码
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>网易热歌榜</h1>
+
+<p>接口地址：<a href="https://lovelxy.top/api/163music">https://lovelxy.top/api/163music</a></p>
+<h2 id="_1">概述</h2>
+<p>该API接口用于获取网易云音乐热歌榜的歌曲信息。通过向接口发送HTTP请求，您可以获取包括歌曲名称、歌手和专辑信息在内的详细数据。</p>
+<blockquote>
+<p><strong>请注意，在第一次请求时，由于服务器需要建立连接，可能会导致较高的响应时间和慢速的网络请求，从而导致获取失败。如果遇到此问题，请重新尝试请求。</strong></p>
+</blockquote>
+<h2 id="_2">请求方法</h2>
+<ul>
+<li>GET</li>
+</ul>
+<h2 id="_3">请求参数</h2>
+<p>该API接口不需要传递任何额外的请求参数。</p>
+<h2 id="_4">响应示例</h2>
+<p>以下是一个成功请求的响应示例：</p>
+<pre><code class="language-json">[
+    {
+        &quot;song&quot;: &quot;离别开出花&quot;,
+        &quot;artist&quot;: &quot;就是南方凯&quot;,
+        &quot;album&quot;: &quot;离别开出花&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我想念&quot;,
+        &quot;artist&quot;: &quot;汪苏泷&quot;,
+        &quot;album&quot;: &quot;我想念&quot;
+    },
+    {
+        &quot;song&quot;: &quot;罗生门（Follow）&quot;,
+        &quot;artist&quot;: &quot;梨冻紧, Wiz_H张子豪&quot;,
+        &quot;album&quot;: &quot;罗生门（Follow）&quot;
+    },
+    {
+        &quot;song&quot;: &quot;悬溺&quot;,
+        &quot;artist&quot;: &quot;葛东琪&quot;,
+        &quot;album&quot;: &quot;第二街区&quot;
+    },
+    {
+        &quot;song&quot;: &quot;还是会想你&quot;,
+        &quot;artist&quot;: &quot;林达浪, h3R3&quot;,
+        &quot;album&quot;: &quot;还是会想你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;予你&quot;,
+        &quot;artist&quot;: &quot;队长&quot;,
+        &quot;album&quot;: &quot;予你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;凄美地&quot;,
+        &quot;artist&quot;: &quot;郭顶&quot;,
+        &quot;album&quot;: &quot;飞行器的执行周期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我记得&quot;,
+        &quot;artist&quot;: &quot;赵雷&quot;,
+        &quot;album&quot;: &quot;署前街少年&quot;
+    },
+    {
+        &quot;song&quot;: &quot;把回忆拼好给你&quot;,
+        &quot;artist&quot;: &quot;王贰浪&quot;,
+        &quot;album&quot;: &quot;把回忆拼好给你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;虚拟&quot;,
+        &quot;artist&quot;: &quot;陈粒&quot;,
+        &quot;album&quot;: &quot;小梦大半&quot;
+    },
+    {
+        &quot;song&quot;: &quot;冷战&quot;,
+        &quot;artist&quot;: &quot;TizzyT, Vinida (万妮达)&quot;,
+        &quot;album&quot;: &quot;做旧&quot;
+    },
+    {
+        &quot;song&quot;: &quot;句号&quot;,
+        &quot;artist&quot;: &quot;G.E.M.邓紫棋&quot;,
+        &quot;album&quot;: &quot;摩天动物园&quot;
+    },
+    {
+        &quot;song&quot;: &quot;浮光&quot;,
+        &quot;artist&quot;: &quot;周深&quot;,
+        &quot;album&quot;: &quot;浮光&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我只能离开&quot;,
+        &quot;artist&quot;: &quot;颜人中&quot;,
+        &quot;album&quot;: &quot;初恋那件小事 电视剧原声带&quot;
+    },
+    {
+        &quot;song&quot;: &quot;BINGBIAN病变&quot;,
+        &quot;artist&quot;: &quot;刘大拿, Tiko&quot;,
+        &quot;album&quot;: &quot;BINGBIAN病变&quot;
+    },
+    {
+        &quot;song&quot;: &quot;如果呢&quot;,
+        &quot;artist&quot;: &quot;郑润泽&quot;,
+        &quot;album&quot;: &quot;如果呢&quot;
+    },
+    {
+        &quot;song&quot;: &quot;直到你降临&quot;,
+        &quot;artist&quot;: &quot;阿肆&quot;,
+        &quot;album&quot;: &quot;直到你降临&quot;
+    },
+    {
+        &quot;song&quot;: &quot;慢冷 (Live)&quot;,
+        &quot;artist&quot;: &quot;李荣浩&quot;,
+        &quot;album&quot;: &quot;2022中国好声音 第1期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;忘不掉的你&quot;,
+        &quot;artist&quot;: &quot;h3R3&quot;,
+        &quot;album&quot;: &quot;忘不掉的你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;精卫&quot;,
+        &quot;artist&quot;: &quot;30年前，50年后&quot;,
+        &quot;album&quot;: &quot;丧失年轻，勿失年华&quot;
+    },
+    {
+        &quot;song&quot;: &quot;哪里都是你&quot;,
+        &quot;artist&quot;: &quot;队长&quot;,
+        &quot;album&quot;: &quot;哪里都是你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;在你的身边&quot;,
+        &quot;artist&quot;: &quot;盛哲&quot;,
+        &quot;album&quot;: &quot;在你的身边&quot;
+    },
+    {
+        &quot;song&quot;: &quot;向云端&quot;,
+        &quot;artist&quot;: &quot;小霞, 海洋Bo&quot;,
+        &quot;album&quot;: &quot;向云端&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Nothin' on Me&quot;,
+        &quot;artist&quot;: &quot;Leah Marie Perez&quot;,
+        &quot;album&quot;: &quot;Nothin' on Me&quot;
+    },
+    {
+        &quot;song&quot;: &quot;苦茶子&quot;,
+        &quot;artist&quot;: &quot;Starling8, MoreLearn 27, FIVESTAR&quot;,
+        &quot;album&quot;: &quot;埋汰&quot;
+    },
+    {
+        &quot;song&quot;: &quot;总有一天你会出现在我身边&quot;,
+        &quot;artist&quot;: &quot;棱镜乐队&quot;,
+        &quot;album&quot;: &quot;一次有预谋的初次相遇&quot;
+    },
+    {
+        &quot;song&quot;: &quot;达尔文&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;JJ的咖啡调调, Vol. 2&quot;
+    },
+    {
+        &quot;song&quot;: &quot;若把你&quot;,
+        &quot;artist&quot;: &quot;Kirsty刘瑾睿&quot;,
+        &quot;album&quot;: &quot;若把你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;再等冬天(Memories)&quot;,
+        &quot;artist&quot;: &quot;h3R3&quot;,
+        &quot;album&quot;: &quot;故事商铺·上&quot;
+    },
+    {
+        &quot;song&quot;: &quot;紫荆花盛开&quot;,
+        &quot;artist&quot;: &quot;李荣浩, 梁咏琪&quot;,
+        &quot;album&quot;: &quot;紫荆花盛开&quot;
+    },
+    {
+        &quot;song&quot;: &quot;唯一&quot;,
+        &quot;artist&quot;: &quot;告五人&quot;,
+        &quot;album&quot;: &quot;运气来得若有似无&quot;
+    },
+    {
+        &quot;song&quot;: &quot;雪 Distance&quot;,
+        &quot;artist&quot;: &quot;Capper, 罗言&quot;,
+        &quot;album&quot;: &quot;Uniconfication&quot;
+    },
+    {
+        &quot;song&quot;: &quot;阳光男孩阳光女孩2023&quot;,
+        &quot;artist&quot;: &quot;法老, 小精灵, Vinida (万妮达), 喉结蜥蜴&quot;,
+        &quot;album&quot;: &quot;阳光男孩阳光女孩2023&quot;
+    },
+    {
+        &quot;song&quot;: &quot;水星记&quot;,
+        &quot;artist&quot;: &quot;郭顶&quot;,
+        &quot;album&quot;: &quot;飞行器的执行周期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;姑娘别哭泣&quot;,
+        &quot;artist&quot;: &quot;柯柯柯啊&quot;,
+        &quot;album&quot;: &quot;姑娘别哭泣&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我的美丽feat.海洋Bo&quot;,
+        &quot;artist&quot;: &quot;海洋Bo, 高睿&quot;,
+        &quot;album&quot;: &quot;我的美丽feat.海洋Bo&quot;
+    },
+    {
+        &quot;song&quot;: &quot;多远都要在一起&quot;,
+        &quot;artist&quot;: &quot;G.E.M.邓紫棋&quot;,
+        &quot;album&quot;: &quot;新的心跳&quot;
+    },
+    {
+        &quot;song&quot;: &quot;给你呀（又名：for ya）&quot;,
+        &quot;artist&quot;: &quot;蒋小呢&quot;,
+        &quot;album&quot;: &quot;for ya&quot;
+    },
+    {
+        &quot;song&quot;: &quot;普通人生&quot;,
+        &quot;artist&quot;: &quot;海洋Bo&quot;,
+        &quot;album&quot;: &quot;普通人生&quot;
+    },
+    {
+        &quot;song&quot;: &quot;想你时风起&quot;,
+        &quot;artist&quot;: &quot;单依纯&quot;,
+        &quot;album&quot;: &quot;我的人间烟火 电视剧原声带&quot;
+    },
+    {
+        &quot;song&quot;: &quot;暖一杯茶&quot;,
+        &quot;artist&quot;: &quot;邵帅&quot;,
+        &quot;album&quot;: &quot;暖一杯茶&quot;
+    },
+    {
+        &quot;song&quot;: &quot;起风了&quot;,
+        &quot;artist&quot;: &quot;买辣椒也用券&quot;,
+        &quot;album&quot;: &quot;起风了&quot;
+    },
+    {
+        &quot;song&quot;: &quot;晚风&quot;,
+        &quot;artist&quot;: &quot;7copy, BT07&quot;,
+        &quot;album&quot;: &quot;晚风&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Dehors&quot;,
+        &quot;artist&quot;: &quot;JORDANN&quot;,
+        &quot;album&quot;: &quot;Dehors&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我们的歌&quot;,
+        &quot;artist&quot;: &quot;刘大拿&quot;,
+        &quot;album&quot;: &quot;我们的歌&quot;
+    },
+    {
+        &quot;song&quot;: &quot;爱人错过&quot;,
+        &quot;artist&quot;: &quot;告五人&quot;,
+        &quot;album&quot;: &quot;我肯定在几百年前就说过爱你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;出现又离开 (Live)&quot;,
+        &quot;artist&quot;: &quot;梁博&quot;,
+        &quot;album&quot;: &quot;我是唱作人 第2期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;与我无关&quot;,
+        &quot;artist&quot;: &quot;阿冗&quot;,
+        &quot;album&quot;: &quot;与我无关&quot;
+    },
+    {
+        &quot;song&quot;: &quot;小胡同&quot;,
+        &quot;artist&quot;: &quot;郑润泽&quot;,
+        &quot;album&quot;: &quot;小胡同&quot;
+    },
+    {
+        &quot;song&quot;: &quot;风驶过的声音是&quot;,
+        &quot;artist&quot;: &quot;海洋Bo, 费米Frieme, Zy&quot;,
+        &quot;album&quot;: &quot;风驶过的声音是（说唱版）&quot;
+    },
+    {
+        &quot;song&quot;: &quot;致你&quot;,
+        &quot;artist&quot;: &quot;yihuik苡慧&quot;,
+        &quot;album&quot;: &quot;致你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;沉沦与遐想&quot;,
+        &quot;artist&quot;: &quot;C.HØPE&quot;,
+        &quot;album&quot;: &quot;沉沦与遐想&quot;
+    },
+    {
+        &quot;song&quot;: &quot;幕后生活&quot;,
+        &quot;artist&quot;: &quot;海洋Bo&quot;,
+        &quot;album&quot;: &quot;普通人生&quot;
+    },
+    {
+        &quot;song&quot;: &quot;爱丫爱丫 (live)&quot;,
+        &quot;artist&quot;: &quot;汪苏泷&quot;,
+        &quot;album&quot;: &quot;声生不息·家年华 第2期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;指纹&quot;,
+        &quot;artist&quot;: &quot;杜宣达&quot;,
+        &quot;album&quot;: &quot;指纹&quot;
+    },
+    {
+        &quot;song&quot;: &quot;天外来物&quot;,
+        &quot;artist&quot;: &quot;薛之谦&quot;,
+        &quot;album&quot;: &quot;天外来物&quot;
+    },
+    {
+        &quot;song&quot;: &quot;富士山下&quot;,
+        &quot;artist&quot;: &quot;陈奕迅&quot;,
+        &quot;album&quot;: &quot;What's Going On…?&quot;
+    },
+    {
+        &quot;song&quot;: &quot;晚安&quot;,
+        &quot;artist&quot;: &quot;颜人中&quot;,
+        &quot;album&quot;: &quot;晚安&quot;
+    },
+    {
+        &quot;song&quot;: &quot;一程山路&quot;,
+        &quot;artist&quot;: &quot;毛不易&quot;,
+        &quot;album&quot;: &quot;小王&quot;
+    },
+    {
+        &quot;song&quot;: &quot;如愿&quot;,
+        &quot;artist&quot;: &quot;王菲&quot;,
+        &quot;album&quot;: &quot;如愿&quot;
+    },
+    {
+        &quot;song&quot;: &quot;绽放&quot;,
+        &quot;artist&quot;: &quot;郑润泽&quot;,
+        &quot;album&quot;: &quot;梦游&quot;
+    },
+    {
+        &quot;song&quot;: &quot;可不可以&quot;,
+        &quot;artist&quot;: &quot;张紫豪&quot;,
+        &quot;album&quot;: &quot;可不可以&quot;
+    },
+    {
+        &quot;song&quot;: &quot;一格格&quot;,
+        &quot;artist&quot;: &quot;卫兰&quot;,
+        &quot;album&quot;: &quot;一格格&quot;
+    },
+    {
+        &quot;song&quot;: &quot;最后一页&quot;,
+        &quot;artist&quot;: &quot;江语晨&quot;,
+        &quot;album&quot;: &quot;恋习&quot;
+    },
+    {
+        &quot;song&quot;: &quot;你是我的风景&quot;,
+        &quot;artist&quot;: &quot;Zy&quot;,
+        &quot;album&quot;: &quot;你是我的风景&quot;
+    },
+    {
+        &quot;song&quot;: &quot;天下&quot;,
+        &quot;artist&quot;: &quot;张杰&quot;,
+        &quot;album&quot;: &quot;明天过后&quot;
+    },
+    {
+        &quot;song&quot;: &quot;11&quot;,
+        &quot;artist&quot;: &quot;队长, 黄礼格&quot;,
+        &quot;album&quot;: &quot;11&quot;
+    },
+    {
+        &quot;song&quot;: &quot;十二月的奇迹&quot;,
+        &quot;artist&quot;: &quot;呆呆破&quot;,
+        &quot;album&quot;: &quot;十二月的奇迹&quot;
+    },
+    {
+        &quot;song&quot;: &quot;还是分开&quot;,
+        &quot;artist&quot;: &quot;张叶蕾&quot;,
+        &quot;album&quot;: &quot;还是分开&quot;
+    },
+    {
+        &quot;song&quot;: &quot;特别的人&quot;,
+        &quot;artist&quot;: &quot;方大同&quot;,
+        &quot;album&quot;: &quot;危险世界&quot;
+    },
+    {
+        &quot;song&quot;: &quot;慢冷·2024&quot;,
+        &quot;artist&quot;: &quot;谷江山&quot;,
+        &quot;album&quot;: &quot;慢冷·2024&quot;
+    },
+    {
+        &quot;song&quot;: &quot;时空观影券&quot;,
+        &quot;artist&quot;: &quot;Tiko, 缪礼丞, 粉太狼&quot;,
+        &quot;album&quot;: &quot;时空观影券&quot;
+    },
+    {
+        &quot;song&quot;: &quot;王招君 (你看你拉住我的模样)&quot;,
+        &quot;artist&quot;: &quot;任素汐&quot;,
+        &quot;album&quot;: &quot;王招君 (你看你拉住我的模样)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;偷心&quot;,
+        &quot;artist&quot;: &quot;张学友&quot;,
+        &quot;album&quot;: &quot;偷心&quot;
+    },
+    {
+        &quot;song&quot;: &quot;高，还没富，但帅&quot;,
+        &quot;artist&quot;: &quot;Ty., PSY.P, KnowKnow&quot;,
+        &quot;album&quot;: &quot;高，还没富，但帅&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Letting Go&quot;,
+        &quot;artist&quot;: &quot;刘大拿&quot;,
+        &quot;album&quot;: &quot;Letting Go&quot;
+    },
+    {
+        &quot;song&quot;: &quot;带我去找夜生活&quot;,
+        &quot;artist&quot;: &quot;告五人&quot;,
+        &quot;album&quot;: &quot;带我去找夜生活&quot;
+    },
+    {
+        &quot;song&quot;: &quot;武家坡2021&quot;,
+        &quot;artist&quot;: &quot;龍猛寺寬度&quot;,
+        &quot;album&quot;: &quot;武家坡 2021&quot;
+    },
+    {
+        &quot;song&quot;: &quot;姑娘别哭泣 (弹唱版)&quot;,
+        &quot;artist&quot;: &quot;柯柯柯啊&quot;,
+        &quot;album&quot;: &quot;姑娘别哭泣&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Red Moon&quot;,
+        &quot;artist&quot;: &quot;Lil Uzi Vert&quot;,
+        &quot;album&quot;: &quot;Red Moon&quot;
+    },
+    {
+        &quot;song&quot;: &quot;形容&quot;,
+        &quot;artist&quot;: &quot;沈以诚&quot;,
+        &quot;album&quot;: &quot;初遇&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我看了56次日落&quot;,
+        &quot;artist&quot;: &quot;邵甲天-ET, 邹念慈&quot;,
+        &quot;album&quot;: &quot;有人爱 有期待&quot;
+    },
+    {
+        &quot;song&quot;: &quot;遐想&quot;,
+        &quot;artist&quot;: &quot;郑润泽&quot;,
+        &quot;album&quot;: &quot;梦游&quot;
+    },
+    {
+        &quot;song&quot;: &quot;孤雏&quot;,
+        &quot;artist&quot;: &quot;AGA&quot;,
+        &quot;album&quot;: &quot;孤雏&quot;
+    },
+    {
+        &quot;song&quot;: &quot;冬天的秘密&quot;,
+        &quot;artist&quot;: &quot;周传雄&quot;,
+        &quot;album&quot;: &quot;恋人创世纪&quot;
+    },
+    {
+        &quot;song&quot;: &quot;你&quot;,
+        &quot;artist&quot;: &quot;郑润泽&quot;,
+        &quot;album&quot;: &quot;你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;如果爱忘了&quot;,
+        &quot;artist&quot;: &quot;王贰浪&quot;,
+        &quot;album&quot;: &quot;如果爱忘了&quot;
+    },
+    {
+        &quot;song&quot;: &quot;可能&quot;,
+        &quot;artist&quot;: &quot;程响&quot;,
+        &quot;album&quot;: &quot;可能&quot;
+    },
+    {
+        &quot;song&quot;: &quot;笼&quot;,
+        &quot;artist&quot;: &quot;张碧晨&quot;,
+        &quot;album&quot;: &quot;笼&quot;
+    },
+    {
+        &quot;song&quot;: &quot;MOM&quot;,
+        &quot;artist&quot;: &quot;蜡笔小心&quot;,
+        &quot;album&quot;: &quot;MOM&quot;
+    },
+    {
+        &quot;song&quot;: &quot;倒数&quot;,
+        &quot;artist&quot;: &quot;G.E.M.邓紫棋&quot;,
+        &quot;album&quot;: &quot;另一个童话&quot;
+    },
+    {
+        &quot;song&quot;: &quot;谁 (Live版)&quot;,
+        &quot;artist&quot;: &quot;廖俊涛&quot;,
+        &quot;album&quot;: &quot;这个人创作LIVE现场辑&quot;
+    },
+    {
+        &quot;song&quot;: &quot;这世界那么多人&quot;,
+        &quot;artist&quot;: &quot;莫文蔚&quot;,
+        &quot;album&quot;: &quot;这世界那么多人&quot;
+    },
+    {
+        &quot;song&quot;: &quot;天下&quot;,
+        &quot;artist&quot;: &quot;小瑞&quot;,
+        &quot;album&quot;: &quot;抖音热播旋律&quot;
+    },
+    {
+        &quot;song&quot;: &quot;下雨天&quot;,
+        &quot;artist&quot;: &quot;与少年他, 芝麻Mochi&quot;,
+        &quot;album&quot;: &quot;下雨天&quot;
+    },
+    {
+        &quot;song&quot;: &quot;他不懂&quot;,
+        &quot;artist&quot;: &quot;张杰&quot;,
+        &quot;album&quot;: &quot;爱，不解释&quot;
+    },
+    {
+        &quot;song&quot;: &quot;golden hour&quot;,
+        &quot;artist&quot;: &quot;JVKE&quot;,
+        &quot;album&quot;: &quot;this is what ____ feels like (Vol. 1-4)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;麦恩莉&quot;,
+        &quot;artist&quot;: &quot;方大同&quot;,
+        &quot;album&quot;: &quot;回到未来&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Daylight&quot;,
+        &quot;artist&quot;: &quot;Seredris&quot;,
+        &quot;album&quot;: &quot;Daylight&quot;
+    },
+    {
+        &quot;song&quot;: &quot;愿与愁&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;愿与愁&quot;
+    },
+    {
+        &quot;song&quot;: &quot;晚风心里吹&quot;,
+        &quot;artist&quot;: &quot;阿梨粤&quot;,
+        &quot;album&quot;: &quot;晚风心里吹&quot;
+    },
+    {
+        &quot;song&quot;: &quot;是你&quot;,
+        &quot;artist&quot;: &quot;梦然&quot;,
+        &quot;album&quot;: &quot;是你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;天天&quot;,
+        &quot;artist&quot;: &quot;陶喆&quot;,
+        &quot;album&quot;: &quot;I'm O.K.&quot;
+    },
+    {
+        &quot;song&quot;: &quot;红&quot;,
+        &quot;artist&quot;: &quot;罗言&quot;,
+        &quot;album&quot;: &quot;When the world is came，take it！&quot;
+    },
+    {
+        &quot;song&quot;: &quot;姑娘在远方&quot;,
+        &quot;artist&quot;: &quot;柯柯柯啊&quot;,
+        &quot;album&quot;: &quot;姑娘在远方&quot;
+    },
+    {
+        &quot;song&quot;: &quot;呓语&quot;,
+        &quot;artist&quot;: &quot;毛不易&quot;,
+        &quot;album&quot;: &quot;小王&quot;
+    },
+    {
+        &quot;song&quot;: &quot;喜欢你&quot;,
+        &quot;artist&quot;: &quot;G.E.M.邓紫棋&quot;,
+        &quot;album&quot;: &quot;喜欢你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;像我这样的人&quot;,
+        &quot;artist&quot;: &quot;毛不易&quot;,
+        &quot;album&quot;: &quot;平凡的一天&quot;
+    },
+    {
+        &quot;song&quot;: &quot;第三人称&quot;,
+        &quot;artist&quot;: &quot;买辣椒也用券&quot;,
+        &quot;album&quot;: &quot;第三人称&quot;
+    },
+    {
+        &quot;song&quot;: &quot;字字句句 (Live版)&quot;,
+        &quot;artist&quot;: &quot;张碧晨, 王赫野&quot;,
+        &quot;album&quot;: &quot;天赐的声音第四季 第3期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我还想她&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;JJ陆&quot;
+    },
+    {
+        &quot;song&quot;: &quot;是你 (Live版)&quot;,
+        &quot;artist&quot;: &quot;王赫野, 张靓颖&quot;,
+        &quot;album&quot;: &quot;天赐的声音第四季 第5期&quot;
+    },
+    {
+        &quot;song&quot;: &quot;世间美好与你环环相扣&quot;,
+        &quot;artist&quot;: &quot;柏松&quot;,
+        &quot;album&quot;: &quot;听闻余生&quot;
+    },
+    {
+        &quot;song&quot;: &quot;偏爱&quot;,
+        &quot;artist&quot;: &quot;张芸京&quot;,
+        &quot;album&quot;: &quot;仙剑奇侠传三 电视原声带&quot;
+    },
+    {
+        &quot;song&quot;: &quot;他只是经过&quot;,
+        &quot;artist&quot;: &quot;h3R3, 高旭&quot;,
+        &quot;album&quot;: &quot;他只是经过&quot;
+    },
+    {
+        &quot;song&quot;: &quot;不将就&quot;,
+        &quot;artist&quot;: &quot;李荣浩&quot;,
+        &quot;album&quot;: &quot;有理想&quot;
+    },
+    {
+        &quot;song&quot;: &quot;HEAVEN&quot;,
+        &quot;artist&quot;: &quot;暴躁鸡汤, 陈陈陈涵&quot;,
+        &quot;album&quot;: &quot;HEAVEN&quot;
+    },
+    {
+        &quot;song&quot;: &quot;谁家&quot;,
+        &quot;artist&quot;: &quot;池鱼&quot;,
+        &quot;album&quot;: &quot;谁家&quot;
+    },
+    {
+        &quot;song&quot;: &quot;淘汰&quot;,
+        &quot;artist&quot;: &quot;陈奕迅&quot;,
+        &quot;album&quot;: &quot;认了吧&quot;
+    },
+    {
+        &quot;song&quot;: &quot;孤雏&quot;,
+        &quot;artist&quot;: &quot;高睿&quot;,
+        &quot;album&quot;: &quot;孤雏&quot;
+    },
+    {
+        &quot;song&quot;: &quot;再见莫妮卡&quot;,
+        &quot;artist&quot;: &quot;彭席彦, Franky弗兰奇&quot;,
+        &quot;album&quot;: &quot;再见莫妮卡&quot;
+    },
+    {
+        &quot;song&quot;: &quot;会魔法的老人&quot;,
+        &quot;artist&quot;: &quot;法老, KKECHO&quot;,
+        &quot;album&quot;: &quot;健将mixtape&quot;
+    },
+    {
+        &quot;song&quot;: &quot;STAY&quot;,
+        &quot;artist&quot;: &quot;The Kid LAROI, Justin Bieber&quot;,
+        &quot;album&quot;: &quot;STAY&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Empty Love&quot;,
+        &quot;artist&quot;: &quot;Lulleaux, Kid Princess&quot;,
+        &quot;album&quot;: &quot;Empty Love (feat. Kid Princess)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;TIRED OF PROBLEMS&quot;,
+        &quot;artist&quot;: &quot;NUEKI, TOLCHONOV, Glichery&quot;,
+        &quot;album&quot;: &quot;TIRED OF PROBLEMS&quot;
+    },
+    {
+        &quot;song&quot;: &quot;爱情转移&quot;,
+        &quot;artist&quot;: &quot;陈奕迅&quot;,
+        &quot;album&quot;: &quot;认了吧&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Cruel Summer&quot;,
+        &quot;artist&quot;: &quot;Taylor Swift&quot;,
+        &quot;album&quot;: &quot;Lover&quot;
+    },
+    {
+        &quot;song&quot;: &quot;初恋&quot;,
+        &quot;artist&quot;: &quot;回春丹&quot;,
+        &quot;album&quot;: &quot;初恋&quot;
+    },
+    {
+        &quot;song&quot;: &quot;诀别书&quot;,
+        &quot;artist&quot;: &quot;邓垚&quot;,
+        &quot;album&quot;: &quot;诀别书&quot;
+    },
+    {
+        &quot;song&quot;: &quot;落空&quot;,
+        &quot;artist&quot;: &quot;印子月&quot;,
+        &quot;album&quot;: &quot;印子月歌曲集&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Slow Down&quot;,
+        &quot;artist&quot;: &quot;Madnap, Pauline Herr&quot;,
+        &quot;album&quot;: &quot;Slow Down&quot;
+    },
+    {
+        &quot;song&quot;: &quot;慢慢&quot;,
+        &quot;artist&quot;: &quot;岳燃&quot;,
+        &quot;album&quot;: &quot;慢慢&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Where Did U Go&quot;,
+        &quot;artist&quot;: &quot;G.E.M.邓紫棋&quot;,
+        &quot;album&quot;: &quot;G.E.M.&quot;
+    },
+    {
+        &quot;song&quot;: &quot;皮特皮&quot;,
+        &quot;artist&quot;: &quot;Spylent&quot;,
+        &quot;album&quot;: &quot;皮特皮&quot;
+    },
+    {
+        &quot;song&quot;: &quot;心许百年&quot;,
+        &quot;artist&quot;: &quot;王天戈&quot;,
+        &quot;album&quot;: &quot;心许百年&quot;
+    },
+    {
+        &quot;song&quot;: &quot;溯 (Reverse)&quot;,
+        &quot;artist&quot;: &quot;CORSAK胡梦周, 马吟吟&quot;,
+        &quot;album&quot;: &quot;溯 (Reverse)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Every Time We Touch&quot;,
+        &quot;artist&quot;: &quot;Dream Tunes&quot;,
+        &quot;album&quot;: &quot;Every Time We Touch&quot;
+    },
+    {
+        &quot;song&quot;: &quot;小城夏天&quot;,
+        &quot;artist&quot;: &quot;LBI利比&quot;,
+        &quot;album&quot;: &quot;小城夏天&quot;
+    },
+    {
+        &quot;song&quot;: &quot;心如止水&quot;,
+        &quot;artist&quot;: &quot;Ice Paper&quot;,
+        &quot;album&quot;: &quot;成语接龙&quot;
+    },
+    {
+        &quot;song&quot;: &quot;一直很安静&quot;,
+        &quot;artist&quot;: &quot;王贰浪&quot;,
+        &quot;album&quot;: &quot;一直很安静&quot;
+    },
+    {
+        &quot;song&quot;: &quot;奢香夫人&quot;,
+        &quot;artist&quot;: &quot;凤凰传奇&quot;,
+        &quot;album&quot;: &quot;最炫民族风&quot;
+    },
+    {
+        &quot;song&quot;: &quot;循迹&quot;,
+        &quot;artist&quot;: &quot;王子健&quot;,
+        &quot;album&quot;: &quot;循迹&quot;
+    },
+    {
+        &quot;song&quot;: &quot;孤勇者&quot;,
+        &quot;artist&quot;: &quot;陈奕迅&quot;,
+        &quot;album&quot;: &quot;孤勇者&quot;
+    },
+    {
+        &quot;song&quot;: &quot;主 动&quot;,
+        &quot;artist&quot;: &quot;加木&quot;,
+        &quot;album&quot;: &quot;主 动&quot;
+    },
+    {
+        &quot;song&quot;: &quot;算了吧&quot;,
+        &quot;artist&quot;: &quot;Aioz, 刘思达LOFTHESTAR, 张天枢&quot;,
+        &quot;album&quot;: &quot;算了吧&quot;
+    },
+    {
+        &quot;song&quot;: &quot;三国恋&quot;,
+        &quot;artist&quot;: &quot;王巨星&quot;,
+        &quot;album&quot;: &quot;三国恋&quot;
+    },
+    {
+        &quot;song&quot;: &quot;学不会&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;学不会&quot;
+    },
+    {
+        &quot;song&quot;: &quot;如果这就是爱情&quot;,
+        &quot;artist&quot;: &quot;en&quot;,
+        &quot;album&quot;: &quot;如果这就是爱情&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我怀念的&quot;,
+        &quot;artist&quot;: &quot;孙燕姿&quot;,
+        &quot;album&quot;: &quot;逆光&quot;
+    },
+    {
+        &quot;song&quot;: &quot;忏悔录&quot;,
+        &quot;artist&quot;: &quot;KKECHO, 那奇沃夫, REDBOI&quot;,
+        &quot;album&quot;: &quot;MOVE IN SILENCE&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Shadow Of The Sun&quot;,
+        &quot;artist&quot;: &quot;王OK&quot;,
+        &quot;album&quot;: &quot;Shadow Of The Sun&quot;
+    },
+    {
+        &quot;song&quot;: &quot;删了吧&quot;,
+        &quot;artist&quot;: &quot;烟(许佳豪)&quot;,
+        &quot;album&quot;: &quot;删了吧&quot;
+    },
+    {
+        &quot;song&quot;: &quot;断线&quot;,
+        &quot;artist&quot;: &quot;Shang, lil sophy&quot;,
+        &quot;album&quot;: &quot;断线&quot;
+    },
+    {
+        &quot;song&quot;: &quot;谁&quot;,
+        &quot;artist&quot;: &quot;王贰浪&quot;,
+        &quot;album&quot;: &quot;谁&quot;
+    },
+    {
+        &quot;song&quot;: &quot;One Of The Girls&quot;,
+        &quot;artist&quot;: &quot;The Weeknd, JENNIE, Lily-Rose Depp&quot;,
+        &quot;album&quot;: &quot;The Idol Episode 4 (Music from the HBO Original Series)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;消愁&quot;,
+        &quot;artist&quot;: &quot;毛不易&quot;,
+        &quot;album&quot;: &quot;平凡的一天&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Burn Me Down&quot;,
+        &quot;artist&quot;: &quot;hanji&quot;,
+        &quot;album&quot;: &quot;Burn Me Down&quot;
+    },
+    {
+        &quot;song&quot;: &quot;太聪明&quot;,
+        &quot;artist&quot;: &quot;陈绮贞&quot;,
+        &quot;album&quot;: &quot;Groupies吉他手&quot;
+    },
+    {
+        &quot;song&quot;: &quot;不只是场梦&quot;,
+        &quot;artist&quot;: &quot;李玖哲&quot;,
+        &quot;album&quot;: &quot;不，完美&quot;
+    },
+    {
+        &quot;song&quot;: &quot;你必须忘掉过去所有的伤痛&quot;,
+        &quot;artist&quot;: &quot;陈筱漠&quot;,
+        &quot;album&quot;: &quot;五月的风等不来六月的雨&quot;
+    },
+    {
+        &quot;song&quot;: &quot;年少有为&quot;,
+        &quot;artist&quot;: &quot;李荣浩&quot;,
+        &quot;album&quot;: &quot;耳朵&quot;
+    },
+    {
+        &quot;song&quot;: &quot;All My People&quot;,
+        &quot;artist&quot;: &quot;Alexandra Stan, Manilla Maniacs&quot;,
+        &quot;album&quot;: &quot;All My People&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我看过&quot;,
+        &quot;artist&quot;: &quot;阿彻&quot;,
+        &quot;album&quot;: &quot;我看过&quot;
+    },
+    {
+        &quot;song&quot;: &quot;别问很可怕&quot;,
+        &quot;artist&quot;: &quot;J. Sheon&quot;,
+        &quot;album&quot;: &quot;You'll Never Know / 别问很可怕&quot;
+    },
+    {
+        &quot;song&quot;: &quot;就让这大雨全都落下&quot;,
+        &quot;artist&quot;: &quot;容祖儿&quot;,
+        &quot;album&quot;: &quot;联名&quot;
+    },
+    {
+        &quot;song&quot;: &quot;命运&quot;,
+        &quot;artist&quot;: &quot;家家&quot;,
+        &quot;album&quot;: &quot;《兰陵王》电视剧原声带&quot;
+    },
+    {
+        &quot;song&quot;: &quot;我只能离开&quot;,
+        &quot;artist&quot;: &quot;刘思达LOFTHESTAR&quot;,
+        &quot;album&quot;: &quot;我只能离开&quot;
+    },
+    {
+        &quot;song&quot;: &quot;猜不透（说唱版）&quot;,
+        &quot;artist&quot;: &quot;卢卢快闭嘴, 刘思达LOFTHESTAR&quot;,
+        &quot;album&quot;: &quot;猜不透（说唱版）&quot;
+    },
+    {
+        &quot;song&quot;: &quot;有些&quot;,
+        &quot;artist&quot;: &quot;颜人中&quot;,
+        &quot;album&quot;: &quot;失眠症候群&quot;
+    },
+    {
+        &quot;song&quot;: &quot;浪漫主义&quot;,
+        &quot;artist&quot;: &quot;姜云升&quot;,
+        &quot;album&quot;: &quot;浪漫主义&quot;
+    },
+    {
+        &quot;song&quot;: &quot;如果可以&quot;,
+        &quot;artist&quot;: &quot;韦礼安&quot;,
+        &quot;album&quot;: &quot;如果可以&quot;
+    },
+    {
+        &quot;song&quot;: &quot;失眠飞行&quot;,
+        &quot;artist&quot;: &quot;接个吻，开一枪, 沈以诚, 薛黛霏&quot;,
+        &quot;album&quot;: &quot;失眠飞行&quot;
+    },
+    {
+        &quot;song&quot;: &quot;梦醒&quot;,
+        &quot;artist&quot;: &quot;handsome lau, HYPEEZY, 冯泳, 火滚音乐&quot;,
+        &quot;album&quot;: &quot;梦醒&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Normal No More&quot;,
+        &quot;artist&quot;: &quot;TYSM&quot;,
+        &quot;album&quot;: &quot;Normal No More&quot;
+    },
+    {
+        &quot;song&quot;: &quot;好天气 坏天气&quot;,
+        &quot;artist&quot;: &quot;隆历奇, 法老&quot;,
+        &quot;album&quot;: &quot;焰火与愿望清单&quot;
+    },
+    {
+        &quot;song&quot;: &quot;你想要的&quot;,
+        &quot;artist&quot;: &quot;颜人中&quot;,
+        &quot;album&quot;: &quot;你想要的&quot;
+    },
+    {
+        &quot;song&quot;: &quot;漠河舞厅·2022&quot;,
+        &quot;artist&quot;: &quot;柳爽&quot;,
+        &quot;album&quot;: &quot;漠河舞厅·2022&quot;
+    },
+    {
+        &quot;song&quot;: &quot;触碰不到的你&quot;,
+        &quot;artist&quot;: &quot;余佳运&quot;,
+        &quot;album&quot;: &quot;触碰不到的你&quot;
+    },
+    {
+        &quot;song&quot;: &quot;夏天的风&quot;,
+        &quot;artist&quot;: &quot;火羊瞌睡了&quot;,
+        &quot;album&quot;: &quot;夏天的风&quot;
+    },
+    {
+        &quot;song&quot;: &quot;公路商店（issue）&quot;,
+        &quot;artist&quot;: &quot;沧桑Cang333, Vital维他&quot;,
+        &quot;album&quot;: &quot;公路商店（issue）&quot;
+    },
+    {
+        &quot;song&quot;: &quot;戒烟&quot;,
+        &quot;artist&quot;: &quot;李荣浩&quot;,
+        &quot;album&quot;: &quot;戒烟&quot;
+    },
+    {
+        &quot;song&quot;: &quot;BABYDOLL (Speed)&quot;,
+        &quot;artist&quot;: &quot;Ari Abdul&quot;,
+        &quot;album&quot;: &quot;BABYDOLL (Speed)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;三拜红尘凉&quot;,
+        &quot;artist&quot;: &quot;尹昔眠&quot;,
+        &quot;album&quot;: &quot;三拜红尘凉&quot;
+    },
+    {
+        &quot;song&quot;: &quot;美人鱼&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;第二天堂&quot;
+    },
+    {
+        &quot;song&quot;: &quot;空心&quot;,
+        &quot;artist&quot;: &quot;光泽&quot;,
+        &quot;album&quot;: &quot;光泽&quot;
+    },
+    {
+        &quot;song&quot;: &quot;迷宫&quot;,
+        &quot;artist&quot;: &quot;step.jad依加&quot;,
+        &quot;album&quot;: &quot;迷宫&quot;
+    },
+    {
+        &quot;song&quot;: &quot;篇章&quot;,
+        &quot;artist&quot;: &quot;张韶涵, 王赫野&quot;,
+        &quot;album&quot;: &quot;篇章&quot;
+    },
+    {
+        &quot;song&quot;: &quot;永不失联的爱&quot;,
+        &quot;artist&quot;: &quot;周兴哲&quot;,
+        &quot;album&quot;: &quot;如果雨之后&quot;
+    },
+    {
+        &quot;song&quot;: &quot;岁月神偷&quot;,
+        &quot;artist&quot;: &quot;金玟岐&quot;,
+        &quot;album&quot;: &quot;完美世界&quot;
+    },
+    {
+        &quot;song&quot;: &quot;山楂树之恋&quot;,
+        &quot;artist&quot;: &quot;程佳佳&quot;,
+        &quot;album&quot;: &quot;山楂树之恋 (完整版)&quot;
+    },
+    {
+        &quot;song&quot;: &quot;李白&quot;,
+        &quot;artist&quot;: &quot;李荣浩&quot;,
+        &quot;album&quot;: &quot;模特&quot;
+    },
+    {
+        &quot;song&quot;: &quot;想去海边&quot;,
+        &quot;artist&quot;: &quot;夏日入侵企画&quot;,
+        &quot;album&quot;: &quot;想去海边&quot;
+    },
+    {
+        &quot;song&quot;: &quot;Void&quot;,
+        &quot;artist&quot;: &quot;Hongzhe_Cui&quot;,
+        &quot;album&quot;: &quot;Void&quot;
+    },
+    {
+        &quot;song&quot;: &quot;鲜花&quot;,
+        &quot;artist&quot;: &quot;回春丹&quot;,
+        &quot;album&quot;: &quot;鲜花&quot;
+    },
+    {
+        &quot;song&quot;: &quot;危险派对&quot;,
+        &quot;artist&quot;: &quot;王以太, 刘至佳&quot;,
+        &quot;album&quot;: &quot;危险派对&quot;
+    },
+    {
+        &quot;song&quot;: &quot;吻得太逼真&quot;,
+        &quot;artist&quot;: &quot;刘大拿, Wiz_H张子豪&quot;,
+        &quot;album&quot;: &quot;吻得太逼真&quot;
+    },
+    {
+        &quot;song&quot;: &quot;最佳损友&quot;,
+        &quot;artist&quot;: &quot;陈奕迅&quot;,
+        &quot;album&quot;: &quot;Life Continues…&quot;
+    },
+    {
+        &quot;song&quot;: &quot;入秋&quot;,
+        &quot;artist&quot;: &quot;RAMBO GANG, Trakin(Tk酱(*^o^*)), T-BONE, 江楠江楠_&quot;,
+        &quot;album&quot;: &quot;RamLife1&quot;
+    },
+    {
+        &quot;song&quot;: &quot;恶作剧&quot;,
+        &quot;artist&quot;: &quot;林依晨&quot;,
+        &quot;album&quot;: &quot;幸福遇见&quot;
+    },
+    {
+        &quot;song&quot;: &quot;修炼爱情&quot;,
+        &quot;artist&quot;: &quot;林俊杰&quot;,
+        &quot;album&quot;: &quot;因你 而在&quot;
+    }
+]
+</code></pre>
+<h2 id="_5">响应字段说明</h2>
+<ul>
+<li>song：歌曲名称</li>
+<li>artist：歌手名称（多个歌手使用逗号分隔）</li>
+<li>album：专辑名称</li>
+</ul>
+<h2 id="_6">错误处理</h2>
+<p>如果请求出现错误或获取热歌榜数据失败，将返回以下错误信息：</p>
+<pre><code class="language-json">{
+    &quot;error&quot;: &quot;获取热歌榜数据失败&quot;
+}
+</code></pre>
+<h2 id="_7">示例代码</h2>
+<p>以下是一个使用PHP语言调用该API接口的示例代码：</p>
+<pre><code class="language-php">$url = 'https://lovelxy.top/api/163music';
+$headers = array(
+    'Referer: http://music.163.com/',
+    'Cookie: appver=2.0.2;'
+);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+$data = json_decode($response, true);
+
+if ($data &amp;&amp; isset($data['error'])) {
+    echo $data['error'];
+} else {
+    foreach ($data as $item) {
+        echo &quot;歌曲名称：&quot; . $item['song'] . &quot;&lt;br&gt;&quot;;
+        echo &quot;歌手名称：&quot; . $item['artist'] . &quot;&lt;br&gt;&quot;;
+        echo &quot;专辑名称：&quot; . $item['album'] . &quot;&lt;br&gt;&lt;br&gt;&quot;;
+    }
+}
+</code></pre>
+<p>请根据您的实际需求和编程语言进行相应的调用。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 梦泽-MengZe2 All rights
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
